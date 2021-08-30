@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome {{session['user_first_name']}} {{session['user_last_name']}}!</h1>
+
+    <a href="/paintings/new">Add Painting </a>
+
+    <h3>paintings </h3>
+
+
+    <table>
+     
+
+        {% for painting in paintings %}
+        <tr>
+            <td><a href="/paintings/{{painting.id}}">{{painting.title}}</a></td>
+            
+            <td>by {{painting.user.first_name}}  {{painting.user.last_name}}</td>
+
+            <td>{% if session['user_id'] == painting.users_id %}<a href="/paintings/{{painting.id}}/delete">delete</a> | <a href="/paintings/{{painting.id}}/edit">edit</a>{% endif %}</td>
+        </tr>
+        {% endfor %}
+
+
+    </table>
+    <br>
+    <a href="/logout">logout</a>  
+ 
+</body>
+</html>
