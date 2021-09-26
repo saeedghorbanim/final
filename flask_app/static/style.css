@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    
+    /* background-image: url(./painting.jpeg); */
+}
+
+#error_message {
+    color: aliceblue;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+h1 {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin: 0 auto;
+    color: aliceblue;
+    border: 1px solid black;
+}
+
+h2 {
+    color: darkred;
+}
+
+h3 {
+    margin: 0 626px;
+}
+
+#register{
+    width: 70px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+#login{
+    width: 70px;
+    height: 300px;
+    margin: 0 auto;
+    
+  }
+
+#add_button {
+    margin: 0 auto;
+}

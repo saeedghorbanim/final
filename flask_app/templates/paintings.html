@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <h1>Welcome {{session['user_first_name']}} {{session['user_last_name']}}!</h1>
 
-    <a href="/paintings/new">Add Painting </a>
+    <a href="/paintings/new" id="add_button">Add Painting </a>
 
-    <h3>paintings </h3>
+    <h3>Paintings </h3>
 
 
     <table>

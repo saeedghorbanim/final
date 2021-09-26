@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Welcome to Main page</h1>
-
-    {% with messages = get_flashed_messages() %}     
-    {% if messages %}                            
-        {% for message in messages %}            
-            <p>{{message}}</p>                   
+    <h1>Welcome to The Painting Collection</h1>
+    <div id="error_message">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <p>{{message}}</p>
         {% endfor %}
-    {% endif %}
-    {% endwith %}
+        {% endif %}
+        {% endwith %}
+    </div>
 
-    <h2>register:</h2>
-    <form action="/users/register" method='POST'>
+    <div>
+        <div id="register">
 
-        Name: <input type='text' name= 'first_name'><br>
-        Lastname: <input type='text' name= 'last_name'><br>
-        Email: <input type='email' name='email'><br>
-        Password: <input type='password' name='password'><br>
-        Confirm password: <input type='password' name= 'confirm_password'><br>
-        <input type="submit">
+            <h2>Register:</h2>
+            <form action="/users/register" method='POST'>
 
-    </form>
+                Name: <input type='text' name='first_name'><br>
+                Lastname: <input type='text' name='last_name'><br>
+                Email: <input type='email' name='email'><br>
+                Password: <input type='password' name='password'><br>
+                Confirm password: <input type='password' name='confirm_password'><br>
+                <input type="submit">
+
+            </form>
+
+        </div>
 
 
 
-    <h2>login:</h2>
+        <div id="login">
+            <h2>Login:</h2>
 
-    <form action="/users/login" method='POST'>
+            <form action="/users/login" method='POST'>
 
-        Email: <input type='text' name= 'email'><br>
-        Password: <input type='password' name='password'><br>
-        <input type="submit">
+                Email: <input type='text' name='email'><br>
+                Password: <input type='password' name='password'><br>
+                <input type="submit">
 
-    </form>
+            </form>
+        </div>
+
+    </div>
 </body>
+
 </html>
