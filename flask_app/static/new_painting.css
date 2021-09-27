@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./painting.jpeg);
+}
+
+h1 {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin: 0 auto;
+    color: aliceblue;
+    border: 1px solid black;
+}
+
+#form {
+    margin: 20px auto;
+    color: white;
+    /* height: 65px;
+    width: 700px; */
+    font-size:large;
+    text-align: center;
+}
+
+
+#buttons {
+    text-align: center;
+}
+
+#dashboard_button {
+    margin-right: 30px;
+}
+
+a {
+    color: darkred;
+    font-weight: bolder;
+}

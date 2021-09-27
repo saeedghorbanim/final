@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/new_painting.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <h1>Add a Painting</h1>
 
-    {% with messages = get_flashed_messages() %}     
-    {% if messages %}                            
-        {% for message in messages %}            
-            <p>{{message}}</p>                  
-        {% endfor %}
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+    <p>{{message}}</p>
+    {% endfor %}
     {% endif %}
     {% endwith %}
-    
-    <form action="/paintings/create", method='POST'>
 
-        Title: <input type="text" name="title"><br><br>
-        Description: <br><textarea name="description" cols="27" rows="10"></textarea> <br><br>
-        Price: <input type="number" name="price"> <br><br>
+    <div id="form">
+        <form action="/paintings/create" , method='POST'>
 
-        <input type="submit">
+            Title: <input type="text" name="title"><br><br>
+            Description: <br><textarea name="description" cols="35" rows="10"></textarea> <br><br>
+            Price: <input type="number" name="price"> <br><br>
 
-    </form><br>
+            <input type="submit">
 
-    <a href="/paintings">Dashboard</a><br><br>
-    <a href="/">Logout</a>
+        </form>
+    </div><br>
+    <div id="buttons">
+        <a href="/paintings" id="dashboard_button">Dashboard</a>
+        <a href="/">Logout</a>
+    </div>
 
 
 
 </body>
+
 </html>

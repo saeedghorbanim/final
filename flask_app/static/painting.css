@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin: 0 auto;
+    color: aliceblue;
+    border: 1px solid black;
+}
+
+body {
+    background-image: url(./painting.jpeg);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin: 20px auto;
+    color: white;
+    height: 65px;
+    width: 700px;
+    font-size:large;
+}
+
+#add_button {
+    margin-right: 30px;
+}
+
+#buttons {
+    text-align: center;
+}
+
+a {
+    color: darkred;
+    font-weight: bolder;
+}

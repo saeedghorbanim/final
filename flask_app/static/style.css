@@ -5,10 +5,16 @@
     
 }
 
-/* body {
+body {
     
-    /* background-image: url(./painting.jpeg); */
-} */
+    background-image: url(./painting.jpeg);
+}
+
+table, th, td {
+
+    border: 1px solid black;
+
+}
 
 #error_message {
     color: aliceblue;
@@ -30,9 +36,7 @@ h2 {
     color: darkred;
 }
 
-h3 {
-    margin: 0 626px;
-}
+
 
 #register{
     width: 70px;
