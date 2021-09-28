@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#painting_info {
+    background-image: url(./static/painting2.jpeg);
+}
