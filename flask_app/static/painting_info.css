@@ -4,6 +4,50 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(./painting2.jpeg);
+    background-size: cover;
+    background-position: auto;
+}
+
 #painting_info {
-    background-image: url(./static/painting2.jpeg);
+    margin: 20px auto;
+    color: white;
+    /* height: 65px;
+    width: 700px; */
+    font-size:large;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin: 0 auto;
+    color: aliceblue;
+    border: 1px solid black;
+}
+
+#form {
+    margin: 20px auto;
+    color: white;
+    /* height: 65px;
+    width: 700px; */
+    font-size:large;
+    text-align: center;
+}
+
+#buttons {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#dashboard {
+    margin: auto 30px;
+}
+
+
+a {
+    color: pink;
+    font-weight: bolder;
 }

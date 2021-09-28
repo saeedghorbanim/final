@@ -6,8 +6,9 @@
 }
 
 body {
-    
-    background-image: url(./painting.jpeg);
+    background-image: url(./main_page.jpeg);
+    background-size: cover;
+    background-position: auto;
 }
 
 table, th, td {
@@ -28,7 +29,7 @@ h1 {
     padding-top: 45px;
     padding-bottom: 45px;
     margin: 0 auto;
-    color: aliceblue;
+    color: lightsalmon;
     border: 1px solid black;
 }
 
@@ -42,6 +43,7 @@ h2 {
     width: 70px;
     height: 300px;
     margin: 0 auto;
+    margin-top: 25px;
   }
 
 #login{
