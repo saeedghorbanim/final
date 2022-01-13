@@ -18,7 +18,7 @@ table, th, td {
 }
 
 #error_message {
-    color: aliceblue;
+    color: rgb(187, 8, 8);
     margin: 0 auto;
     text-align: center;
 
